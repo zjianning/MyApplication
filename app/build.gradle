@@ -1,0 +1,75 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.walkietalkie'
+    compileSdk 34
+    buildToolsVersion "34.0.0"
+    defaultConfig {
+        applicationId "com.example.walkietalkie"
+        minSdk 22
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            // 这些值应该从安全的地方获取，比如环境变量或gradle.properties
+            // 这里仅为示例
+            storeFile file("../keystore/release.jks")
+            storePassword "your_keystore_password"
+            keyAlias "your_key_alias"
+            keyPassword "your_key_password"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.cardview
+    
+    // USB Serial库
+    implementation libs.usb.serial
+    
+    // Vinyl-cast audio streaming dependencies
+    // implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
+    // implementation 'com.google.android.gms:play-services-cast-framework:21.3.0'
+
+    // 引入Oboe库用于低延迟音频处理
+    // implementation "com.google.oboe:oboe:1.8.0"
+    
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

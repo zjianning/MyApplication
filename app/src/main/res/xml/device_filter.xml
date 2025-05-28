@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 不指定特定ID，允许接收所有USB设备的连接意图 -->
+<resources>
+    <!-- 空的usb-device标签表示接受所有USB设备 -->
+    <usb-device />
+</resources> 

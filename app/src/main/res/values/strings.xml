@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">对讲机控制</string>
+    <string name="action_settings">设置</string>
+    <string name="action_privacy_policy">隐私政策</string>
+    
+    <!-- 连接状态 -->
+    <string name="status_connected">已连接</string>
+    <string name="status_disconnected">未连接</string>
+    <string name="status_scanning">正在扫描设备…</string>
+    <string name="status_connecting">正在连接...</string>
+    
+    <!-- 设备信息 -->
+    <string name="device_frequency">频率: %s MHz</string>
+    <string name="device_channel">通道: %d</string>
+    <string name="device_volume">音量: %d</string>
+    <string name="device_signal">信号: %d%%</string>
+    <string name="device_battery">电量: %d%%</string>
+    
+    <!-- 控制按钮 -->
+    <string name="btn_ptt">按住说话 (PTT)</string>
+    <string name="btn_ptt_active">正在通话…</string>
+    <string name="btn_scan_start">开始扫描</string>
+    <string name="btn_scan_stop">停止扫描</string>
+    <string name="btn_connect">连接设备</string>
+    <string name="btn_disconnect">断开连接</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_ok">确定</string>
+    
+    <!-- 新增蓝牙连接相关 -->
+    <string name="connection_type_label">连接方式</string>
+    <string name="connection_type_usb">USB连接</string>
+    <string name="connection_type_ble">蓝牙连接</string>
+    <string name="btn_scan_usb">扫描USB设备</string>
+    <string name="btn_scan_ble">扫描蓝牙设备</string>
+    <string name="status_ble_connected">蓝牙已连接</string>
+    <string name="status_ble_disconnected">蓝牙未连接</string>
+    <string name="dialog_title_ble_device_selection">选择蓝牙设备</string>
+    <string name="section_connection">连接方式</string>
+    
+    <!-- 对话框 -->
+    <string name="dialog_title_device_selection">选择设备</string>
+    <string name="dialog_device_selection_message">请选择要连接的对讲机设备：</string>
+    <string name="dialog_device_item">%1$s - %2$s</string>
+    <string name="dialog_title_select_device">选择USB设备</string>
+    <string name="dialog_title_unsupported_device">不支持的设备</string>
+    <string name="dialog_title_no_devices">未找到设备</string>
+    <string name="dialog_message_no_devices">未找到可用的USB设备</string>
+    <string name="dialog_message_no_devices_found">未找到设备</string>
+    <string name="dialog_message_unsupported_device">该设备可能不支持串口通信，连接可能失败。您确定要尝试连接吗？</string>
+    <string name="dialog_message_connection_error">连接错误: %s</string>
+    
+    <!-- 设备状态描述 -->
+    <string name="device_possible_intercom">可能是对讲机</string>
+    <string name="device_generic_usb">普通USB设备</string>
+    <string name="device_supported">支持连接</string>
+    <string name="device_not_supported">不支持连接</string>
+    
+    <!-- 错误信息 -->
+    <string name="error_permission_denied">权限被拒绝</string>
+    <string name="error_usb">USB错误: %s</string>
+    <string name="error_connection_failed">连接失败: %s</string>
+    <string name="error_recording_permission_required">需要录音权限才能使用语音传输功能</string>
+    <string name="error_audio_recorder_init">初始化音频录制器失败</string>
+    <string name="error_connection_cancelled">连接已取消</string>
+    
+    <!-- 控制标签 -->
+    <string name="label_status">状态:</string>
+    <string name="label_frequency">频率:</string>
+    <string name="label_volume">音量:</string>
+    <string name="label_battery">电量:</string>
+    <string name="label_channel">通道:</string>
+    <string name="label_signal">信号:</string>
+    <string name="label_squelch">静噪:</string>
+    <string name="label_audio_level">音频电平:</string>
+    <string name="label_volume_control">音量控制</string>
+    <string name="label_squelch_control">静噪控制</string>
+    
+    <!-- 设备列表项 -->
+    <string name="device_list_name">名称: %s</string>
+    <string name="device_list_address">地址: %s</string>
+    <string name="device_list_type">类型: %s</string>
+    
+    <!-- 蓝牙错误信息 -->
+    <string name="error_bluetooth_not_supported">此设备不支持蓝牙</string>
+    <string name="error_bluetooth_not_enabled">请开启蓝牙</string>
+    <string name="error_bluetooth_permission">请授予蓝牙权限</string>
+    <string name="error_location_permission">需要位置权限才能扫描蓝牙设备</string>
+    
+    <!-- 音频流传输通知 -->
+    <string name="notification_streaming_active">正在进行音频流传输</string>
+    <string name="notification_streaming_inactive">音频流传输已暂停</string>
+    <string name="notification_channel_streaming">音频流传输</string>
+    
+    <!-- 界面分区 -->
+    <string name="section_status">设备状态</string>
+    <string name="section_control">控制面板</string>
+    
+    <!-- 隐私政策 -->
+    <string name="privacy_policy_title">隐私政策</string>
+    <string name="privacy_policy_content">本应用使用USB权限连接对讲机设备，使用录音权限进行音频传输。我们不会收集或上传您的任何个人信息。\n\n应用所请求的权限仅用于实现核心功能，包括：\n\n1. USB权限：用于连接和控制USB对讲机设备\n2. 蓝牙权限：用于连接蓝牙对讲机设备\n3. 位置权限：Android系统要求蓝牙扫描必须有此权限\n4. 录音权限：用于录制音频并发送到对讲机\n\n我们不会将您的任何数据传输到外部服务器或与第三方共享。音频数据仅在本地处理并通过USB或蓝牙直接传输到对讲机设备。</string>
+    
+    <!-- 音频流测试 -->
+    <string name="section_audio_stream">音频流测试</string>
+    <string name="btn_start_stream">启动音频流</string>
+    <string name="btn_stop_stream">停止音频流</string>
+    <string name="msg_stream_url">流地址: %s</string>
+    <string name="error_start_stream">启动音频流失败</string>
+    <string name="msg_stream_started">音频流已启动</string>
+    <string name="msg_stream_stopped">音频流已停止</string>
+    
+    <!-- AudioManager错误消息 -->
+    <string name="error_audio_init_failed">无法初始化音频录制器</string>
+    <string name="error_audio_init_failed_with_reason">初始化音频录制器失败: %s</string>
+    <string name="error_audio_player_init_failed">无法初始化音频播放器</string>
+    <string name="error_audio_player_init_failed_with_reason">初始化音频播放器失败: %s</string>
+    <string name="error_recording">录音时出错: %s</string>
+    <string name="error_start_recording">开始录音失败: %s</string>
+    <string name="error_start_playback">开始播放失败: %s</string>
+    <string name="error_audio_playback">播放音频数据失败: %s</string>
+</resources>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Walkie-Talkie Control</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_privacy_policy">Privacy Policy</string>
+    
+    <!-- Connection Status -->
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_scanning">Scanning for devices…</string>
+    <string name="status_connecting">Connecting...</string>
+    
+    <!-- Device Info -->
+    <string name="device_frequency">%1$s MHz</string>
+    <string name="device_channel">%1$d</string>
+    <string name="device_volume">%1$d</string>
+    <string name="device_signal">%1$d</string>
+    <string name="device_battery">%1$d%%</string>
+    
+    <!-- Control Buttons -->
+    <string name="btn_ptt">Push to Talk (PTT)</string>
+    <string name="btn_ptt_active">Transmitting…</string>
+    <string name="btn_scan_start">Start Scan</string>
+    <string name="btn_scan_stop">Stop Scan</string>
+    <string name="btn_connect">Connect Device</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_ok">OK</string>
+    
+    <!-- Dialog Messages -->
+    <string name="dialog_device_item">%1$s - %2$s</string>
+    <string name="dialog_title_select_device">Select Intercom Device</string>
+    <string name="dialog_title_unsupported_device">Unsupported Device</string>
+    <string name="dialog_message_unsupported_device">This device may not support serial communication and connection might fail. Do you still want to try connecting?</string>
+    <string name="dialog_title_no_devices">No Devices Available</string>
+    <string name="dialog_message_no_devices">No USB devices were found. Please make sure the device is properly connected.</string>
+    
+    <!-- Error Messages -->
+    <string name="error_permission_denied">USB Permission Denied</string>
+    <string name="error_usb">USB Error: %1$s</string>
+    <string name="error_connection_cancelled">Connection Cancelled</string>
+    <string name="error_recording_permission_required">Recording permission is required for voice transmission</string>
+    <string name="error_audio_recorder_init">Failed to initialize audio recorder</string>
+    
+    <!-- Control Labels -->
+    <string name="section_status">Device Status</string>
+    <string name="section_control">Controls</string>
+    <string name="label_status">Connection Status:</string>
+    <string name="label_frequency">Frequency:</string>
+    <string name="label_volume">Volume:</string>
+    <string name="label_battery">Battery:</string>
+    <string name="label_signal">Signal Strength:</string>
+    <string name="label_channel">Channel:</string>
+    <string name="label_volume_control">Volume Control</string>
+    <string name="label_squelch_control">Squelch Control</string>
+    <string name="label_audio_level">Audio Level</string>
+    
+    <!-- Device List Items -->
+    <string name="device_possible_intercom">Possibly a walkie-talkie</string>
+    <string name="device_generic_usb">USB Device</string>
+    <string name="device_supported">✓ Supported</string>
+    <string name="device_not_supported">✗ Not Supported</string>
+    
+    <!-- Audio Streaming Notifications -->
+    <string name="notification_streaming_active">Audio streaming in progress</string>
+    <string name="notification_streaming_inactive">Audio streaming paused</string>
+    <string name="notification_channel_streaming">Audio Streaming</string>
+    
+    <!-- Privacy Policy -->
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="privacy_policy_content">
+        This app uses USB permission to communicate with walkie-talkies and recording permission for microphone audio.\n\n
+        We do not collect any personal information. All your data is stored locally on your device.\n\n
+        Permissions used by this app:\n
+        - USB permission: For connecting and controlling walkie-talkie devices\n
+        - Recording permission: For voice transmission through the microphone\n
+    </string>
+    
+    <!-- 音频流测试 -->
+    <string name="section_audio_stream">Audio Stream Test</string>
+    <string name="btn_start_stream">Start Audio Stream</string>
+    <string name="btn_stop_stream">Stop Audio Stream</string>
+    <string name="msg_stream_url">Stream URL: %s</string>
+    <string name="error_start_stream">Failed to start audio stream</string>
+    <string name="msg_stream_started">Audio stream started</string>
+    <string name="msg_stream_stopped">Audio stream stopped</string>
+    
+    <!-- AudioManager Error Messages -->
+    <string name="error_audio_init_failed">Failed to initialize audio recorder</string>
+    <string name="error_audio_init_failed_with_reason">Failed to initialize audio recorder: %s</string>
+    <string name="error_audio_player_init_failed">Failed to initialize audio player</string>
+    <string name="error_audio_player_init_failed_with_reason">Failed to initialize audio player: %s</string>
+    <string name="error_recording">Recording error: %s</string>
+    <string name="error_start_recording">Failed to start recording: %s</string>
+    <string name="error_start_playback">Failed to start playback: %s</string>
+    <string name="error_audio_playback">Failed to play audio data: %s</string>
+    
+    <!-- Connection Type -->
+    <string name="connection_type_label">Connection Type</string>
+    <string name="connection_type_usb">USB Connection</string>
+    <string name="connection_type_ble">Bluetooth Connection</string>
+    <string name="btn_scan_usb">Scan USB Devices</string>
+    <string name="btn_scan_ble">Scan Bluetooth Devices</string>
+    <string name="status_ble_connected">Bluetooth Connected</string>
+    <string name="status_ble_disconnected">Bluetooth Disconnected</string>
+    <string name="dialog_title_ble_device_selection">Select Bluetooth Device</string>
+    <string name="section_connection">Connection</string>
+    <string name="dialog_message_connection_error">Connection Error: %s</string>
+    <string name="error_connection_failed">Connection Failed: %s</string>
+    <string name="label_squelch">Squelch:</string>
+    <string name="device_list_name">Name: %s</string>
+    <string name="device_list_address">Address: %s</string>
+    <string name="device_list_type">Type: %s</string>
+    <string name="error_bluetooth_not_supported">Bluetooth is not supported on this device</string>
+    <string name="error_bluetooth_not_enabled">Please enable Bluetooth</string>
+    <string name="error_bluetooth_permission">Bluetooth permission required</string>
+    <string name="error_location_permission">Location permission required for Bluetooth scanning</string>
+
+    <!-- Rename existing strings to match Chinese version -->
+    <string name="dialog_title_device_selection">Select Device</string>
+    <string name="dialog_message_no_devices_found">No devices found</string>
+</resources> 

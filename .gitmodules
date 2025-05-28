@@ -1,0 +1,3 @@
+[submodule "vinyl-cast"]
+	path = vinyl-cast
+	url = https://github.com/aschober/vinyl-cast.git

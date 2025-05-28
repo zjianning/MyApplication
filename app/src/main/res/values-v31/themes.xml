@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WalkieTalkie" parent="Base.Theme.WalkieTalkie">
+        <!-- 确保我们可以在Android 12上使用USB串行库 -->
+        <item name="android:usesPermissionFlags">neverForLocation</item>
+    </style>
+</resources> 
